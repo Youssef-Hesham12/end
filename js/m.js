@@ -103,7 +103,7 @@ function login() {
     for (let i = 0; i < signUpArray.length; i++) {
         if (signUpArray[i].email.toLowerCase() == email.toLowerCase() && signUpArray[i].password.toLowerCase() == password.toLowerCase()) {
             localStorage.setItem('sessionUsername', signUpArray[i].name)
-           window.location.href="../Home.html"
+           window.location.href="Home.html"
         } else {
             document.getElementById('incorrect').innerHTML = '<span class="p-2 text-danger">incorrect email or password</span>'
         }
